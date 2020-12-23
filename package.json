@@ -5,9 +5,13 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@material-ui/core": "4.11.2",
+    "@material-ui/icons": "4.11.2",
+    "@material-ui/styles": "4.11.2",
     "react": "17.0.0",
     "react-dom": "17.0.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "react-snippets": "1.0.2"
   },
   "devDependencies": {
     "typescript": "3.8.3"
