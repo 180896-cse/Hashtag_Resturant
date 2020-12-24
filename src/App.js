@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
+import ReactDom from "react-dom";
 import "./styles.css";
+import Landing_view from "./components/Landing_view";
+import hastag from "./assets/hastag.PNG";
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1></h1>
-      <h2></h2>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return <Landing_view />;
+  }
 }
+
+export default App;
