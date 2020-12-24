@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.banner_tittle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+
+  color: #fff;
+  font-weight: bold;
+}
