@@ -10,7 +10,7 @@ class Landing_view extends Component {
   render() {
     const imgStyle = {
       backgroundImage: `url(${main_bg})`,
-      position: "Absloute",
+      position: "fixed",
       minWidth: "100%",
       minHeight: "100%",
       backgroundSize: "cover",
@@ -22,7 +22,6 @@ class Landing_view extends Component {
       <div>
         <div style={imgStyle}></div>
         <Navbar_view />
-
         <div className="banner_tittle">
           <h1>
             Restaurant
