@@ -2,13 +2,15 @@ import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Landing_view.css";
 import main_bg from "../assets/26.jpg";
-import Navbar from "./Navbar";
+import Navbar_view from "./Navbar_view";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Story_view from "./Story_view";
 
 class Landing_view extends Component {
   render() {
     const imgStyle = {
       backgroundImage: `url(${main_bg})`,
-      position: "fixed",
+      position: "Absloute",
       minWidth: "100%",
       minHeight: "100%",
       backgroundSize: "cover",
@@ -17,9 +19,9 @@ class Landing_view extends Component {
       filter: "blur(5px)"
     };
     return (
-      <section>
-        <Navbar />
+      <div>
         <div style={imgStyle}></div>
+        <Navbar_view />
 
         <div className="banner_tittle">
           <h1>
@@ -27,7 +29,7 @@ class Landing_view extends Component {
             <br /> & Drinks
           </h1>
         </div>
-      </section>
+      </div>
     );
   }
 }
