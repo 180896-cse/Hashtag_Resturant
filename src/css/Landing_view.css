@@ -1,24 +1,21 @@
-.banner_tittle > p {
-  font-family: "Playfair Display", serif;
-  font-size: 4.2em;
-  text-transform: uppercase;
+* {
   margin: 0;
   padding: 0;
 }
-.banner_tittle {
-  font-style: italic;
-  position: absolute;
-  z-index: 1;
-  width: 90%;
-  margin-left: 4%;
-  height: 100%;
-  color: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+  font-family: "Playfair Display", serif;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0;
 }
-@media only screen and (max-width: 500px) {
-  .banner_tittle > p {
-    font-size: 3em;
-  }
+.banner_tittle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  text-align: center;
+  font-style: italic;
+  color: #f5f5f5;
+  font-weight: bold;
 }

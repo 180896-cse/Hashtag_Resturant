@@ -8,12 +8,7 @@ class Story_view extends Component {
   render() {
     return (
       <div>
-        <div className="">
-          <h1>
-            Restaurant
-            <br /> & Drinks
-          </h1>
-        </div>
+        <h3>Director's Pen</h3>
       </div>
     );
   }
