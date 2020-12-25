@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Landing_view.css";
 import main_bg from "../assets/26.jpg";
+import Navbar from "./Navbar";
 
 class Landing_view extends Component {
   render() {
@@ -17,7 +18,9 @@ class Landing_view extends Component {
     };
     return (
       <section>
+        <Navbar />
         <div style={imgStyle}></div>
+
         <div className="banner_tittle">
           <h1>
             Restaurant
