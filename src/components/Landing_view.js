@@ -13,13 +13,16 @@ class Landing_view extends Component {
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
-      filter: "blur(4px)"
+      filter: "blur(5px)"
     };
     return (
       <section>
         <div style={imgStyle}></div>
         <div className="banner_tittle">
-          <h1>Restaurants and Drinks</h1>
+          <h1>
+            Restaurant
+            <br /> & Drinks
+          </h1>
         </div>
       </section>
     );
