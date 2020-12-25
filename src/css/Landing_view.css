@@ -17,3 +17,8 @@
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width: 500px) {
+  .banner_tittle > p {
+    font-size: 3em;
+  }
+}
