@@ -1,21 +1,19 @@
-* {
+.banner_tittle > p {
+  font-family: "Playfair Display", serif;
+  font-size: 4.2em;
+  text-transform: uppercase;
   margin: 0;
   padding: 0;
 }
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: 70px;
-  text-transform: uppercase;
-  margin: 0;
-}
 .banner_tittle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 5;
-  text-align: center;
   font-style: italic;
+  position: absolute;
+  z-index: 5;
+  width: 90%;
+  margin-left: 4%;
+  height: 100%;
   color: #f5f5f5;
-  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

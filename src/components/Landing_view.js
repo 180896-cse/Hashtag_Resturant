@@ -23,10 +23,10 @@ class Landing_view extends Component {
         <div style={imgStyle}></div>
         <Navbar_view />
         <div className="banner_tittle">
-          <h1>
+          <p>
             Restaurant
             <br /> & Drinks
-          </h1>
+          </p>
         </div>
       </div>
     );
