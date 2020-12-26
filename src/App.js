@@ -6,7 +6,11 @@ import Navbar_view from "./components/Navbar_view";
 import Story_view from "./components/Story_view";
 class App extends Component {
   render() {
-    return <Landing_view />;
+    return (
+      <div>
+        <Landing_view />
+      </div>
+    );
   }
 }
 
