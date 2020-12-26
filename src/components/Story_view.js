@@ -7,8 +7,8 @@ import Navbar_view from "./Navbar_view";
 class Story_view extends Component {
   render() {
     return (
-      <div>
-        <h3>Director's Pen</h3>
+      <div className="container">
+        <h3 className="text-primary">react boots </h3>
       </div>
     );
   }

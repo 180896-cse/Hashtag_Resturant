@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Navbar.css";
-
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
