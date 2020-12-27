@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#parent1 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.pan {
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  margin-top: 5%;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-family: mo;
+  font-family: "Viaoda Libre", cursive;
+}
+.q {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Redressed", cursive;
+  font-weight: bold;
+}
+.q::before {
+  /* styling for line near treandind creations */
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 87%;
+}
+.q::after {
+  /* styling for line near treandind creations */
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  right: 0;
+  top: 87%;
+}
+
+.Order_view_image {
+  position: absolute;
+  filter: blur(4px);
+}
+
+.child1 {
+  background: rgba(0, 0, 0, 0.8);
+  top: 50vh;
+  position: absolute;
+}
+button {
+  margin-top: 5%;
+}
