@@ -7,14 +7,18 @@ class Order_view extends Component {
   render() {
     return (
       <div id="parent1">
-        <div className="pan">
+        <div className="pan" >
           <h1>Best from Our Pan</h1>
-          <p className="q">
+          <div className="trending-creation-text-container">
+            <div className="line"></div>
             <span>Trending Creations</span>
-          </p>
+            <div className="line"></div>
+          </div>
         </div>
-        <img className="img-fluid Order_view_image" src={Order_view_image} />
-        <div class="card-deck child1">
+        {/* <img className="img-fluid Order_view_image" src={Order_view_image} /> */}
+        <div class="card-deck trending-container">
+
+            {/* Trending 1 */}
           <div class="card">
             <img
               class="card-img-top"
@@ -33,6 +37,8 @@ class Order_view extends Component {
               </p>
             </div>
           </div>
+
+            {/* Trending 2 */}
           <div class="card">
             <img
               class="card-img-top"
@@ -50,6 +56,8 @@ class Order_view extends Component {
               </p>
             </div>
           </div>
+
+            {/* Trending 3 */}
           <div class="card">
             <img
               class="card-img-top"
@@ -69,6 +77,7 @@ class Order_view extends Component {
             </div>
           </div>
         </div>
+        <div className="bg-image"></div>
       </div>
     );
   }
