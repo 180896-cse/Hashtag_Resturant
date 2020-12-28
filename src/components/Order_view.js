@@ -15,7 +15,6 @@ class Order_view extends Component {
             <div className="line"></div>
           </div>
         </div>
-        {/* <img className="img-fluid Order_view_image" src={Order_view_image} /> */}
         <div class="card-deck trending-container">
 
             {/* Trending 1 */}
@@ -77,7 +76,7 @@ class Order_view extends Component {
             </div>
           </div>
         </div>
-        <div className="bg-image"></div>
+        <div className="bg-image"><img className="Order_view_image" src={Order_view_image} /></div>
       </div>
     );
   }
