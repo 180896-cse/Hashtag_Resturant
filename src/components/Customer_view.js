@@ -2,16 +2,13 @@ import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Customer_view.css";
 import ScriptTag from "react-script-tag";
-import { Call } from "@material-ui/icons";
+
 class Customer_view extends Component {
   func() {
-    window.onload = function () {
-      console.log("ok");
-      return this;
-    };
-    Call(this.func);
+    console.log("log");
   }
   render() {
+    this.func();
     return (
       <div>
         <img src="https://wallpaperaccess.com/full/271965.jpg" />

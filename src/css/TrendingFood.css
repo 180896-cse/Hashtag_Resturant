@@ -1,65 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 
-.trending-food-view{
-    width: 100%;
-    margin: 0;
-    padding: 0;   
+.trending-food-view {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
 }
-.trending-food-view>.card{
-    flex-grow: 1;
-    flex-shrink: 1;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    
-  }
-  .trending-food-view>.card>.card-body  {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .trending-food-view>.card>.card-body >.card-text {
-    margin: 2%;
-  }
-.trending-food-view>.card>.order-view-card-img{
+.trending-food-view > .card {
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.trending-food-view > .card > .card-body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.trending-food-view > .card > .card-body > .card-text {
+  margin: 2%;
+}
+.trending-food-view > .card > .order-view-card-img {
   width: 100%;
   max-height: 100%;
-
 }
-.trending-food-view>.card>.order-view-card-img>img{
+.trending-food-view > .card > .order-view-card-img > img {
   width: 100%;
 }
 
-@media only screen and (max-width:1000px)
-{
-  .trending-food-view>.card
-  {
+@media only screen and (max-width: 1000px) {
+  .trending-food-view > .card {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin:0%;
+    margin: 0%;
   }
-  .trending-food-view>.card>.order-view-card-img{
+  .trending-food-view > .card > .order-view-card-img {
     width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .trending-food-view>.card>.order-view-card-img>img{
+  .trending-food-view > .card > .order-view-card-img > img {
     width: 100%;
   }
-  .trending-food-view>.card>.card-body>.card-text
-  {
+  .trending-food-view > .card > .card-body > .card-text {
     text-align: justify;
     font-size: 1.1em;
   }
 }
 
-@media only screen and (max-width:500px)
-{
-  .trending-food-view>.card>.card-body>.card-text
-  {
+@media only screen and (max-width: 500px) {
+  .trending-food-view > .card > .card-body > .card-text {
     text-align: justify;
     font-size: 0.8em;
   }
