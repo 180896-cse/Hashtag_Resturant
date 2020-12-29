@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
 
-
-#parent1{
+.order-view-container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,40 +10,46 @@
   min-height: 100vh;
   position: relative;
 }
-#parent1 >.pan>h1{
+.order-view-container >.pan>h1{
   font-size: 4em;
 }
-.pan{
+.order-view-container>.pan{
   color: white;
   font-family: "Viaoda Libre", cursive;
   min-height: 160px;
   font-weight: bold;
 }
-.trending-creation-text-container{
+.order-view-container>.pan>.trending-creation-text-container{
   font-size: 1.3em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.line{
+.order-view-container>.pan>.trending-creation-text-container>.line{
   border:1px solid black;
   flex-grow: 1;
   display: inline;
   flex-shrink: 1;
 }
 
-.trending-container{
+.order-view-container>.trending-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background: rgba(0,0,0,0.1);
+  margin: 0;
+  padding: 0;
+  align-items: stretch;
+  justify-items: center;
   width: 100%;
-  flex-shrink: 1;
-  background: rgba(0,0,0,0.1);  
 }
-.card-body >.card-text {
-  margin: 2%;
+.order-view-container>.trending-container>.trending-food{
+  width: 30%;
+  flex-grow: 1;
+  margin:10px;
 }
-.bg-image{
+
+.order-view-container>.bg-image{
   background-image: url("../assets/29.jpg");
   background-size: cover;
   width: 100%;
@@ -54,7 +59,32 @@
   filter: blur(4px);
 }
 
-.bg-image>img{
+.order-view-container>.bg-image>img{
   width: 100%;
   height: 100%;
+}
+@media only screen and (max-width:1000px)
+{
+  
+  .order-view-container>.trending-container>.trending-food{
+    width: 100%;
+    flex-grow: 1;
+    margin:10px;
+  }
+}
+@media only screen and (max-width:500px)
+{
+  .order-view-container>.pan>.trending-creation-text-container{
+    font-size: 0.9em;
+  } 
+  .order-view-container >.pan>h1{
+    font-size: 2.5em;
+  }
+  
+.order-view-container>.trending-container>.trending-food{
+  width: 100%;
+  flex-grow: 1;
+  margin:10px;
+}
+
 }
