@@ -4,6 +4,8 @@ import "../css/Landing_view.css";
 import main_bg from "../assets/26.jpg";
 import Navbar_view from "./Navbar_view";
 import Order_view from "./Order_view";
+import Foodmenu_view from "./Foodmenu_view";
+import Footer_view from "../components/Footer_view";
 
 class Landing_view extends Component {
   render() {
@@ -22,6 +24,8 @@ class Landing_view extends Component {
           </div>
         </div>
         <Order_view />
+        <Foodmenu_view />
+        <Footer_view />
       </div>
     );
   }
