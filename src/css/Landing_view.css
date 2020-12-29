@@ -16,13 +16,22 @@
   color: white;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.6);
+
   display: flex;
-  align-items: center;
+  padding-left: 2%;
   justify-content: center;
   flex-direction: column;
   top: 0;
   left: 0;
+}
+.main_txt .rar {
+  margin-left: -2%;
+}
+.main_txt h6 {
+  padding-left: 2%;
+}
+.main_txt .sar {
+  padding-left: 2%;
 }
 
 p {

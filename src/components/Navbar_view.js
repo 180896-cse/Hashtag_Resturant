@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Navbar.css";
-import logo from "../assets/hastag_logo.png";
+import logo from "../assets/Hastag-original.png";
 import menu from "../assets/background.jpg";
 import ScriptTag from "react-script-tag";
 import Director_pen from "../components/Director_pen";
@@ -37,8 +37,8 @@ class Navbar_view extends Component {
   render() {
     return (
       <div id="main">
-        <nav>
-          <img src={logo} />
+        <nav className="rnc">
+          <img className="qwe" src={""} />
           <div class="hamburger" onClick={this.hamburger_funct}>
             <div className="line"></div>
             <div className="line"></div>
@@ -63,7 +63,7 @@ class Navbar_view extends Component {
                 <a href="#">Gallery</a>
               </li>
               <li>
-                <a href="#">Our Employes</a>
+                <a href="#">Employee Corner</a>
               </li>
 
               <li>

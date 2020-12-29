@@ -32,8 +32,12 @@ nav ul li a {
   font-family: "Caveat", cursive;
   font-size: 1.2rem;
 }
+/* .rnc .qwe{
+  width: 12%;
+  height: 88%;
+} */
 nav img {
-  height: 60px;
+  height: 70px;
   margin: 15px;
 }
 

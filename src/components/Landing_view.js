@@ -15,12 +15,14 @@ class Landing_view extends Component {
         <div className="text-container">
           <img className="img-fluid main_bg" src={main_bg} />
           <div className="main_txt">
-            <h6>Premium</h6>
-            <p>Quality</p>
-            <h1 style={{ fontStyle: "italic" }}>
-              Resturant
-              <br />& Drinks
-            </h1>
+            <div className="rar">
+              <h6>Premium</h6>
+              <p className="sar">Quality</p>
+              <h1 style={{ fontStyle: "italic" }}>
+                Resturant
+                <br />& Drinks
+              </h1>
+            </div>
           </div>
         </div>
         <Order_view />
