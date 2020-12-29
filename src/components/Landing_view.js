@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ReactDom from "react-dom";
 import "../css/Landing_view.css";
-import main_bg from "../assets/26.jpg";
+import main_bg from "../assets/15.jpg";
 import Navbar_view from "./Navbar_view";
 import Order_view from "./Order_view";
 import Foodmenu_view from "./Foodmenu_view";

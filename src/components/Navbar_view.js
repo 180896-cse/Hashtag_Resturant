@@ -4,8 +4,9 @@ import "../css/Navbar.css";
 import logo from "../assets/hastag_logo.png";
 import menu from "../assets/background.jpg";
 import ScriptTag from "react-script-tag";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Director_pen from "../components/Director_pen";
 import Tablebooking_view from "../components/Tablebooking_view";
+import { NavLink } from "react-router-dom";
 
 class Navbar_view extends Component {
   hamburger_funct() {
@@ -35,68 +36,69 @@ class Navbar_view extends Component {
 
   render() {
     return (
-      <Router>
-        <div id="main">
-          <nav>
-            <img src={logo} />
-            <div class="hamburger" onClick={this.hamburger_funct}>
-              <div className="line"></div>
-              <div className="line"></div>
-              <div className="line"></div>
-            </div>
+      <div id="main">
+        <nav>
+          <img src={logo} />
+          <div class="hamburger" onClick={this.hamburger_funct}>
+            <div className="line"></div>
+            <div className="line"></div>
+            <div className="line"></div>
+          </div>
 
-            <div className="menu_option">
-              <ul>
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">Order/Reservation</a>
-                </li>
-                <li>
-                  <a href="#">Director's Pen</a>
-                </li>
-                <li>
-                  <a href="#">Trendings</a>
-                </li>
-                <li>
-                  <a href="#">Gallery</a>
-                </li>
+          <div className="menu_option">
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <NavLink to="/Tablebooking_view">Table Reservation</NavLink>
+              </li>
+              <li>
+                <NavLink to="/Director_pen">Director's Pen</NavLink>
+              </li>
+              <li>
+                <a href="#">Trendings</a>
+              </li>
+              <li>
+                <a href="#">Gallery</a>
+              </li>
+              <li>
+                <a href="#">Our Employes</a>
+              </li>
 
-                <li>
-                  <a href="#">Contact Us</a>
-                </li>
-              </ul>
-            </div>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
 
-            <div
-              id="sidebar_menu"
-              style={{ backgroundImage: "url(" + menu + ")" }}
-            >
-              <div style={{ color: "#f5f5f5" }} class="container cmenu">
-                <div class="row">
-                  <a>Home</a>
-                </div>
-                <div class="row">
-                  <a>Order/Reservation</a>
-                </div>
-                <div class="row">
-                  <a>Director's Pen </a>
-                </div>
-                <div class="row">
-                  <a>Trendings</a>
-                </div>
-                <div class="row">
-                  <a>Gallery</a>
-                </div>
-                <div class="row">
-                  <a>Contact Us</a>
-                </div>
+          <div
+            id="sidebar_menu"
+            style={{ backgroundImage: "url(" + menu + ")" }}
+          >
+            <div style={{ color: "#f5f5f5" }} class="container cmenu">
+              <div class="row">
+                <a>Home</a>
+              </div>
+              <div class="row">
+                <a>Order/Reservation</a>
+              </div>
+              <div class="row">
+                <a>Director's Pen </a>
+              </div>
+              <div class="row">
+                <a>Trendings</a>
+              </div>
+              <div class="row">
+                <a>Gallery</a>
+              </div>
+              <div class="row">
+                <a>Contact Us</a>
               </div>
             </div>
-          </nav>
-        </div>
-      </Router>
+          </div>
+        </nav>
+      </div>
     );
   }
 }
