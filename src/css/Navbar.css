@@ -38,15 +38,43 @@ nav img {
 }
 
 .hamburger {
-  float: right;
+  position: fixed;
+  right: 0;
+  top: 0;
   margin: 15px;
+  z-index: 1;
 }
 
 .line {
   display: none;
 }
+.cmenu {
+  font-family: "Caveat", cursive;
+}
+
+#sidebar_menu {
+  font-size: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100vh;
+  z-index: -1;
+  /* float: right; */
+  /* border: solid red 2px; */
+  background: blue;
+  transition: 1s width;
+  background-image: url({logo});
+}
+
+#sidebar_menu a {
+  margin-left: 8%;
+}
 
 @media only screen and (max-width: 600px) {
+  .menu_option {
+    display: none;
+  }
   .line {
     display: block;
     background-color: white;
